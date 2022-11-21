@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  background-color: lightblue;
+  height: 80px;
+}
+
+
+.header h1 {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  color: rgb(31, 73, 109);
+  box-shadow: 0 0 5px 5px rgb(202, 202, 202);
+}
+
+.header span {
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.466);
+  font-style: italic;
+  margin-right: -110px;
+  transform: translateY(-7%);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  grid-auto-rows: minmax(100px, auto);
+  margin: 30px 100px;
+}
+
+.wrapper h2 {
+  text-align: center;
+}
+
+.book {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid darkgrey;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  width: 500px;
+}
+
+.book:hover {
+  box-shadow: 0px 0px 4px 4px rgb(190, 190, 190);
+}
+
+.book img {
+  width: 200px;
+  height: auto;
+}
+
+.book li {
+  list-style: none;
+}
+
+.book a {
+  font-style: italic;
+}
+
+.book a:hover {
+  cursor: pointer;
+}
+
+.book-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.book-left {
+  width: 50%;
+  position: relative;
+}
+
+.book-left button,
+.gotocart {
+  width: 150px;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: lightsalmon;
+}
+
+.book-left button:hover {
+  cursor: pointer;
+  background-color: darksalmon;
+}
+
+.description {
+  position: absolute;
+  top: 0vh;
+  left: 20vw;
+  width: 500px;
+  height: auto;
+  background-color: rgb(184, 202, 250);
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 100vh 100vw rgba(0, 0, 0, 0.644);
+  z-index: 1;
+}
+
+.description button {
+  display: block;
+  margin: 10px auto 0;
+}
+
+.order-books {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gotocart {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.book-right {
+  position: relative;
+}
+
+.cross {
+  position: absolute;
+  top: -75px;
+  right: 0px;
+  background-color: darksalmon;
+  border: 1px solid black;
+  padding: 3px 8px;
+  font-size: 20px;
+  cursor: pointer;
+}

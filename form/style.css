@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  width: 800px;
+  margin: 0 auto;
+}
+
+header h1 {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(31, 73, 109);
+  width: 100%;
+  background-color: rgb(238, 244, 255);
+  height: 80px;
+  box-shadow: 0 0 5px 5px rgb(202, 202, 202);
+}
+
+.shipping label,
+.address label {
+  border-bottom: 1px solid darksalmon;
+}
+
+.shipping input[type="text"] {
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 1px;
+  margin-top: 10px;
+  width: 230px;
+}
+
+h3 {
+  margin: 20px 0;
+  box-shadow: 0 5px 5px 0 #aaa;
+  padding: 5px;
+  background-color: darksalmon;
+  font-weight: 400;
+}
+
+.shipping input[type="date"] {
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 1px;
+  width: 230px;
+  margin-top: 10px;
+}
+
+.shipping {
+  display: flex;
+  justify-content: space-between;
+}
+
+.address {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.address input {
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 1px;
+  width: 350px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.payment_type {
+  display: flex;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+#submit-button {
+  margin: 30px 0 30px;
+  width: 150px;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: lightsalmon;
+  cursor: pointer;
+}
+
+#submit-button:disabled {
+  background-color: lightgray;
+  border: 1px solid darkgrey;
+}
+
+.back {
+  background-color: #cc5500;
+  text-decoration: none;
+  color: white;
+  margin: 30px 0 30px;
+  width: 150px;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  display: none;
+  font-size: 10px;
+  width: 205px;
+}

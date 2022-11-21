@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../form/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header id="header">
+    <h1>the BookShop</h1>
+  </header>
+  <main>
+    <form id="form">
+      <h3>Shipping Details</h3>
+      <div class="shipping">
+        <div class="shipping_column">
+          <label for="first-name">FIRST</label><br>
+          <input type="text" id="first-name" name="firstname" placeholder="Name" required>
+          <p class="error" id="errorName">The field is invalid</p>
+        </div>
+        <div class="shipping_column">
+          <label for="last-name">LAST</label><br>
+          <input type="text" id="last-name" name="lastname" placeholder="Surname" required>
+          <p class="error" id="errorLastname">The field is invalid</p>
+        </div>
+        <div class="shipping_column">
+          <label for="delivery-date">DELIVERY DATE</label><br>
+          <input type="date" id="delivery-date" name="deliverydate" required>
+          <p class="error" id="errorDelivery">The field is invalid</p>
+        </div>
+      </div>
+
+      <h3>Address</h3>
+      <div class="address">
+        <div class="address_column">
+          <label for="city">CITY</label><br>
+          <input type="text" id="city" name="city" placeholder="City Name" required><br>
+          <p class="error" id="errorCity">The field is invalid</p>
+          <label for="street">STREET</label><br>
+          <input type="text" id="street" name="street" placeholder="Street Name" required><br>
+          <p class="error" id="errorStreet">The field is invalid</p>
+        </div>
+        <div class="address_column">
+          <label for="house">HOUSE</label><br>
+          <input type="text" id="house" name="house" placeholder="House Number" required><br>
+          <p class="error" id="errorHouse">The field is invalid</p>
+          <label for="flat">FLAT</label><br>
+          <input type="text" id="flat" name="flat" placeholder="Flat Number" required>
+          <p class="error" id="errorFlat">The field is invalid</p>
+        </div>
+      </div>
+
+      <h3>Payment Information</h3>
+      <div class="payment_type">
+        <div class="payment">
+          <input type="radio" id="card" name="payment" value="Card" checked required>
+          <label for="card">Card</label>
+        </div>
+        <div class="payment">
+          <input type="radio" id="cash" name="payment" value="Cash">
+          <label for="cash">Cash</label>
+        </div>
+      </div>
+
+      <h3>Choose 2 gifts (optional):</h3>
+      <input type="checkbox" id="gift1" name="gift1" value="Pack as a gift">
+      <label for="gift1">Pack as a gift</label><br>
+      <input type="checkbox" id="gift2" name="gift2" value="Add postcard">
+      <label for="gift2">Add postcard</label><br>
+      <input type="checkbox" id="gift3" name="gift3" value=">Provide 2% discount to the next time">
+      <label for="gift3">Provide 2% discount to the next time</label><br>
+      <input type="checkbox" id="gift4" name="gift4" value="Branded pen or pencil">
+      <label for="gift4">Branded pen or pencil</label><br>
+
+      <button type="submit" id="submit-button" disabled>Complete</button>
+      <a class="back" href="../index.html">Back to Catalog</a>
+    </form>
+  </main>
+
+  <script src="../form/script.js"></script>
+</body>
+</html>
