@@ -25,7 +25,7 @@ goToCart.innerHTML = "Confirm Order";
 orderBooks.appendChild(goToCart);
 goToCart.classList.add("gotocart");
 goToCart.onclick = function () {
-  window.location.href = "../form/index.html";
+  window.location.href = "./form/index.html";
 }
 orderBooks.classList.add("order-books");
 let total = document.createElement("h3");
